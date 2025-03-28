@@ -7,55 +7,47 @@
 }
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+
 html{scroll-behavior: smooth;}
+
+@keyframes main{
+  50%{transform: translateY(10px);}
+  100%{transform: translateY(0);}
+}
 
 .goto-top a{
   position: fixed;
   bottom: 50px;
   right: 20px;
-  background: url(../image/공.png) no-repeat center/cover;
+  background: url(../image/공2.png) no-repeat center/cover;
   object-fit: cover;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 80px;
+  z-index: 1;
+  animation: main infinite 1.5s;
 }
 
-.goto-top a:hover{
-  bottom: 60px;
-  transform: rotate(15deg);
-}
-
+.goto-top a:hover{animation: none;}
 
 body{
-  background-color: antiquewhite;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #F6EDD3;
   font-family: "Poppins", sans-serif;
-}
-
-.container{
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100%;
 }
 
 main{
   margin: auto;
   /* border: 1px solid #000; */
-  width: 1300px;
   text-align: center;
 }
 
-header{width: inherit;}
+header{width: 100%;}
 
 h2{
-  font-size: 38px;
+  font-size: 52px;
   font-weight: 600;
   text-transform: capitalize;
   color: #222;
-  padding: 50px 0;
+  margin: 50px 0;
 }
 
 
@@ -77,7 +69,7 @@ h2{
 .gnb .main-logo{
   margin: 0 50px;
   transition: 0.3s;
-  width: 120px;
+  width: 110px;
   height: 100px;
   background: url(../image/로고.png) no-repeat center/cover;
   opacity: 1;
@@ -102,6 +94,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0,0,0,0.2);
 }
 
 header .gnb ul li a{
@@ -114,8 +107,8 @@ header .gnb ul li a{
   padding:  10px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  font-weight: 500;
-  color: #1A3163;
+  font-weight: 600;
+  color: #0E3970;
   transition: 0.3s;
   position: relative;
 }
@@ -127,7 +120,7 @@ header .gnb ul li a{
   left: 0;
   width: 0;
   height: 28px;
-  background-color: #1A3163;
+  background-color: #0E3970;
   transition: 0.3s;
   z-index: -1;
   opacity: 0;
@@ -143,58 +136,102 @@ header .gnb ul li a{
 
 
 /* 비주얼_____________________________________ */
-header img:nth-child(2){
+.main{position: relative;}
+
+.main img{
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 1000px;
   object-fit: cover;
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 30% 30%;
   margin-bottom: 100px;
-  position: relative;
-}
-/* 타이포 */
-header img:nth-child(3){
-  position: absolute;
-  top: 200px;
-  left: 300px;
+  top: 0;
+  left: 0;
+  transition: 0.8s;
 }
 
-@keyframes main{
-  50%{transform: translateY(7px);}
-  100%{transform: translateY(0);}
+.main .img1{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .img2{
+  top: 0;
+  left: 0;
+}
+.main:hover .img1{opacity: 0;}
+
+.main:after{
+  content: '';
+  position: absolute;
+  background: url(/image/로고-비주얼2.png) no-repeat center;
+  width: 800px;
+  height: 600px;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%) scale(1.2);
 }
 
 /* 구름 */
-header img:nth-child(4){
+.main-pic img:nth-child(1){
   position: absolute;
-  top: 400px;
-  left: 600px;
-  width: 100px;
-  animation: main infinite 1.3s;
+  top: 70%;
+  right: 8%;
+  width: 80px;
+  animation: main infinite 1.6s;
 }
 /* 나비 */
-header img:nth-child(5){
+.main-pic img:nth-child(2){
   position: absolute;
-  top: 200px;
-  left: 200px;
+  top: 25%;
+  left: 17%;
   width: 70px;
-  /* transform: rotate(20deg); */
-  animation: main infinite 1.3s;
+  animation: main infinite 1.4s;
 }
 /* 튤립 */
-header img:nth-child(6){
+.main-pic img:nth-child(3){
   position: absolute;
-  top: 400px;
-  left: 100px;
+  top: 50%;
+  left: 10%;
   width: 80px;
-  /* transform: rotate(-30deg); */
+  animation: main infinite 1.1s;
+}
+/* 양말 */
+.main-pic img:nth-child(4){
+  position: absolute;
+  top: 45%;
+  right: 15%;
+  width: 80px;
+  animation: main infinite 1.2s;
+}
+/* 장난감 */
+.main-pic img:nth-child(5){
+  position: absolute;
+  top: 15%;
+  left: 47%;
+  width: 70px;
   animation: main infinite 1.3s;
 }
-
-
-#s1, #s2, #s3, #s4{
-  height: max-content;
-  justify-content: center;
+/* 하트 */
+.main-pic img:nth-child(6){
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  width: 60px;
+  animation: main infinite 1.3s;
 }
+/* 생선 */
+.main-pic img:nth-child(7){
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 60px;
+  animation: main infinite 1.1s;
+}
+
+
+#s1, #s2, #s3, #s4{padding-top: 50px;}
 
 
 
@@ -202,44 +239,46 @@ header img:nth-child(6){
 /* About Us_____________________________ */
 .section-inner1{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
 }
+
+.section-inner1 .us{display: flex;}
 
 .section-inner1 .right{
   width: 400px;
   height: 800px;
   justify-items: center;
-  /* background-color: #fff; */
   position: relative;
 }
 
-.section-inner1 .right img{
-  width: 160px; 
-  height: 130px;
-  margin-bottom: 50px;
-  margin-top: 250px;
-  /* border: 1px solid #000; */
+.right .logo-us{width: 200px;}
+
+.right .logo-us img{
+  width: inherit;
+  position: absolute;
+  top: 20%;
 }
 
-  .section-inner1 .right .text{
+.right .text{
     /* border: 1px solid red; */
     width: 400px;
     position: absolute;
     bottom: 30px;
-  }
+}
 
-.section-inner1 .right .text h3{
-  font-size: 30px;
+.right .text h3{
+  font-size: 34px;
   font-weight: 500;
-  color: #18355d;
+  text-align: center;
+  color: #0E3970;
   line-height: 30px;
   /* border: 1px solid #000; */
 }
 
-.section-inner1 .right .text span{
-  font-size: 14px;
+.right .text span{
+  font-size: 16px;
   width: 400px;
   display: inline-block;
   margin-top: 20px;
@@ -250,12 +289,22 @@ header img:nth-child(6){
 }
 
 
-.section-inner1 .left img{
+.left{position: relative;}
+.left img:nth-child(1){
   width: 600px;
   height: 800px;
+  transition: 0.35s;
 }
-
-.section-inner1 .left img:hover .right{
+.left img:nth-child(1):hover{
+  border-radius: 50%;
+  border: 10px solid #bbdf79;
+}
+/* 생선 */
+.left img:nth-child(2){
+  width: 80px;
+  position: absolute;
+  top: 500px;
+  left: 220px;
   opacity: 1;
 }
 
@@ -265,108 +314,126 @@ header img:nth-child(6){
 
 /* Shop__________________________________ */
 .section-inner2{
-  background-color: #fff;
-}
-
-.shop{
-  border: 5px solid brown;
-  padding-bottom: 50px;
-}
-
-.shop-top{
-  /* border: 1px solid blue; */
-  padding: 50px 100px;
-  font-size: 14px;
-  text-align: left;
   display: flex;
-  justify-content:space-evenly;
-}
-.shop-top spna{position: relative;}
-.shop-top em::after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 10px;
-  background-color: blueviolet;
-}
-
-/* 버튼 */
-.shop-top span:nth-child(2){
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 30px;
-  background-color: #222;
-  color: #fff;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.shop-top span:nth-child(2):hover{
-  background-color: #18355d;
-  transform: translateY(-5px);
+  background-color: #fff;
+  width: 100%;
 }
 
-.shop h3{
-  font-size: 24px;
-  font-weight: 500;
-  text-transform: capitalize;
-  padding-bottom: 30px;
-}
-.shop img{
-  width: 100%;
+.shop-info{justify-items: center;}
+
+.shop .pic-more img{
+  width: 1300px;
   height: 400px;
   object-fit: cover;
-  position: relative;
+}
+.pic-more {position: relative;} 
+
+.shop-top em{
+  font-style: normal;
+  color: #0E3970;
+  font-weight: 500;
 }
 
-.pic-more{position: relative;} /* 사진 */
+.shop-top span:nth-child(1){
+  position: relative; 
+  display: inline-block;
+  width: max-content;
+  margin-right: 100px;
+}
+
+.shop-top{display: flex;}
+
+/* view more 버튼 */
+.shop-top span:nth-child(2){
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 150px;
+  height: 50px;
+  margin: 0 40px;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #666;
+  border-radius: 30px;
+  transition: 0.25s;
+}
+
+.shop-top span:nth-child(2):hover{
+  color: #0E3970;
+  border: 1px solid #0E3970;
+  transform: translateY(-10px);
+}
+
+.shop-info{margin: 40px 0;}
+
+.shop h3{
+  font-size: 32px;
+  font-weight: 600;
+  color: #0E3970;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
 
 .caption{
-  width: 1300px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
   height: 400px;
   align-items: center;
   color: #fff;
   font-size: 15px;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  /* opacity: 0; */
-  background: linear-gradient(45deg, #000, transparent);
-  /* padding: 50px 50px; */
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.5), transparent);
 }
-
-.pick:hover .caption{opacity: 1;}
 
 .caption p{
   width: 400px;
   text-align: left;
   position: absolute;
-  top: 100px;
-  left: 80px;
+  top: 25%;
+  left: 20%;
 }
 
 .caption span{
   cursor: pointer;
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  position: sticky;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  line-height: 45px;
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  transition: 0.35s;
 }
+.caption span:hover{
+  transform: translateY(-10px);
+  background-color: rgba(255,255,255,0.2);
+}
+
 
 .shop-list {
   display: flex;
-  justify-content:space-between
+  justify-content:space-between;
 }
 
 .shop h3{
   margin-top: 30px;
   /* border: 1px solid #000; */
   height: max-content;
+}
+
+.productions{
+  display: flex;
+  margin: auto;
 }
 
 .production{
@@ -376,6 +443,13 @@ header img:nth-child(6){
 }
 
 .production img{width: 400px;}
+
+.production span{
+  text-align: center;
+  align-items: center;
+  display: block;
+  /* border: 1px solid #000; */
+}
 
 .production ul{
   display: flex;
@@ -387,7 +461,7 @@ header img:nth-child(6){
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  background-color: #18355d;
+  background-color: #0E3970;
   margin: 0 5px;
 }
 
@@ -403,6 +477,18 @@ header img:nth-child(6){
 .production .list3 li:nth-child(2){background: url(/image/사료-청어.png) no-repeat center;}
 .production .list3 li:nth-child(3){background: url(/image/사료-현미.png) no-repeat center;}
 
+.production .list4 li:nth-child(1){background: url(/image/사료-닭.png) no-repeat center;}
+.production .list4 li:nth-child(2){background: url(/image/사료-완두.png) no-repeat center;}
+.production .list4 li:nth-child(3){background: url(/image/사료-연어오일.png) no-repeat center;}
+
+.production .list5 li:nth-child(1){background: url(/image/사료-연어.png) no-repeat center;}
+.production .list5 li:nth-child(2){background: url(/image/사료-완두.png) no-repeat center;}
+.production .list5 li:nth-child(3){background: url(/image/사료-렌즈콩.png) no-repeat center;}
+
+.production .list6 li:nth-child(1){background: url(/image/사료-닭.png) no-repeat center;}
+.production .list6 li:nth-child(2){background: url(/image/사료-연어.png) no-repeat center;}
+.production .list6 li:nth-child(3){background: url(/image/사료-병아리콩.png) no-repeat center;}
+
 /* hover */
 .production:hover{background-color: antiquewhite;}
 .production:hover img{width: 420px;}
@@ -414,22 +500,151 @@ header img:nth-child(6){
 
 
 /* Blue Angel_________________________________ */
-.s3-top,
-.s3-info{
-  margin-bottom: 50px;
+.section-inner3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.set .pic{
-  border: 10px solid #000;
+.s3-top{
+  display: flex;
+  flex-direction: column;
+}
+
+.s3-info{margin-bottom: 50px;}
+.slide{margin:auto;}
+.slide img{width: 100px; display: inline-block;}
+
+@keyframes row1-ani{
+  50%{transform: translateX(-5%);}
+  100%{transform: translateX(0);}
+}
+@keyframes row2-ani{  
+  50%{transform: translateX(5%);}
+  100%{transform: translateX(0);}
+}
+
+.section-inner3 .deco1{
+  right: 0;
+  animation: row2-ani 2s linear infinite alternate;
+}
+.section-inner3 .deco2{
+  left: 0;
+  animation: row1-ani 2s linear infinite alternate;
+}
+
+.s3-top {position: relative;}
+.s3-top:before{
+  content: '동물을 통해 얻은 이익은 다시 동물에게 되돌려줘야하며, 특히 어렵고 힘든 곳이 있다면 지원을 아끼지 말아야 한다.';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 380px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.s3-top:hover.s3-top:before{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.s3-info .info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0;
+  width: ;
+}
+.s3-info .info h4{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0E3970;
+}
+.s3-info .info h4 p{
+  font-size: 24px;
+  font-weight: 400;
+  color: #0E3970;
+}
+
+.s3-info .info span{
+  width: 700px;
+  font-size: 16px;
+  padding-top: 30px;
+}
+
+
+/* 카드________________________________ */
+.posts{
+  /* border: 10px solid palegreen; */
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+  margin: auto;
+}
+.post{flex-direction: column;}
+
+.post:nth-of-type(1){
+  display: flex; 
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.post:nth-of-type(2){
+  display: flex; 
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.post:nth-of-type(3){
+  display: flex; 
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* 사진 */
+.post .post-pic{
   width: 300px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.post .post-pic img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.post .post-pic img:hover{
+  transform: scale(1.1);
 }
 
-.set span{
-  border: 1px solid red;
-  display: inline-block;
-  width: 400px;
-}
 
+
+.post-text{
+  font-size: 16px;
+  font-weight: 400;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
 
 
 
@@ -441,6 +656,9 @@ header img:nth-child(6){
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  position: relative;
+  width: 1300px;
 }
 
 .blue-angel{
@@ -455,6 +673,8 @@ header img:nth-child(6){
   border: 1px solid transparent;
   border-radius: 50px;
   background-color: aliceblue;
+  align-content: center;
+  text-align: center;
   padding-bottom: 50px;
 }
 
@@ -512,25 +732,58 @@ header img:nth-child(6){
 }
 
 
-
-
-
-
 /* 일러스트 */
-.mascot-pic img:not(deco){
-  margin: 30px;
-  width: 500px;
+.mascot-pic .pic img{
   margin: 50px;
 }
 
-.mascot-pic .pic{
-  display: flex;
-  flex-direction: column;
-}
+.mascot-pic .pic{display: flex;}
 
 /* 하트 */
-.mascot-pic .deco{
-  width: 50px;
+@keyframes heart {
+  0%{transform: rotate(0);}
+  25%{transform: rotate(15deg);}
+  50%{transform: rotate(0);}
+  75%{transform: rotate(-15deg);}
+  100%{transform: rotate(0deg);}
+}
+
+.hearts img{width: 50px;}
+.heart{position: absolute;}
+.heart1{
+  top: 10%;
+  right: 20px;
+  animation: heart infinite 2s;
+}
+.heart2{
+  top: 25%;
+  left: 100px;
+  animation: heart infinite 2s;
+}
+.heart3{
+  top: 25%;
+  left: 100px;
+  animation: heart infinite 2s;
+}
+.heart4{
+  top: 900px;
+  left: 220px;
+  animation: heart infinite 2s;
+}
+.heart5{
+  bottom: 800px;
+  right: 15px;
+  animation: heart infinite 2s;
+}
+.heart6{
+  bottom: 35%;
+  left: 70px;
+  animation: heart infinite 2s;
+}
+.heart7{
+  bottom: 1400px;
+  right: 150px;
+  animation: heart infinite 2s;
 }
 
 
@@ -541,24 +794,42 @@ header img:nth-child(6){
 
 /* footer_____________________________ */
 footer{
-  background-color: #1A3163;}
-
-.bottom-nav{
-  padding: 100px;
-  position: flex;
+  background-color: #0E3970;
+  font-family: 'Noto Sans', sans-serif;
+  color: #eee;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
 }
 
-.bottom-nav .footer-text{
-  color: #fff;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 24px;
-  display: block;
-  text-align: center;
+.footer-logo img{width: 200px; }
+
+.footer-info{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin: 0 40px 90px 40px;
 }
 
-.bottom-nav .sns {
-  font-family: 'Material Symbols Outlined';
+.footer-info p{display: inline-block;}
+
+footer .num, footer .contact{margin: 0 50px;
+}
+
+footer .util{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding-right: 100px;
+  text-transform: capitalize;
+}
+footer .util a:hover{
+  text-decoration: underline;
+  color: burlywood;
 }
