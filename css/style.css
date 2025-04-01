@@ -165,7 +165,7 @@ header .gnb ul li a{
 .main:after{
   content: '';
   position: absolute;
-  background: url(/image/로고-비주얼2.png) no-repeat center;
+  background: url(/image/logo-main.png) no-repeat center;
   width: 800px;
   height: 600px;
   top: 45%;
@@ -465,29 +465,29 @@ header .gnb ul li a{
   margin: 0 5px;
 }
 
-.production .list1 li:nth-child(1){background: url(/image/사료-닭.png) no-repeat center;}
-.production .list1 li:nth-child(2){background: url(/image/사료-고구마.png) no-repeat center;}
-.production .list1 li:nth-child(3){background: url(/image/사료-감자.png) no-repeat center;}
+.production .list1 li:nth-child(1){background: url(/image/c.png) no-repeat center;}
+.production .list1 li:nth-child(2){background: url(/image/b.png) no-repeat center;}
+.production .list1 li:nth-child(3){background: url(/image/a.png) no-repeat center;}
 
-.production .list2 li:nth-child(1){background: url(/image/사료-오리.png) no-repeat center;}
-.production .list2 li:nth-child(2){background: url(/image/사료-감자.png) no-repeat center;}
-.production .list2 li:nth-child(3){background: url(/image/사료-타피오카.png) no-repeat center;}
+.production .list2 li:nth-child(1){background: url(/image/h.png) no-repeat center;}
+.production .list2 li:nth-child(2){background: url(/image/a.png) no-repeat center;}
+.production .list2 li:nth-child(3){background: url(/image/k.png) no-repeat center;}
 
-.production .list3 li:nth-child(1){background: url(/image/사료-연어.png) no-repeat center;}
-.production .list3 li:nth-child(2){background: url(/image/사료-청어.png) no-repeat center;}
-.production .list3 li:nth-child(3){background: url(/image/사료-현미.png) no-repeat center;}
+.production .list3 li:nth-child(1){background: url(/image/f.png) no-repeat center;}
+.production .list3 li:nth-child(2){background: url(/image/j.png) no-repeat center;}
+.production .list3 li:nth-child(3){background: url(/image/lpng) no-repeat center;}
 
-.production .list4 li:nth-child(1){background: url(/image/사료-닭.png) no-repeat center;}
-.production .list4 li:nth-child(2){background: url(/image/사료-완두.png) no-repeat center;}
-.production .list4 li:nth-child(3){background: url(/image/사료-연어오일.png) no-repeat center;}
+.production .list4 li:nth-child(1){background: url(/image/c.png) no-repeat center;}
+.production .list4 li:nth-child(2){background: url(/image/i.png) no-repeat center;}
+.production .list4 li:nth-child(3){background: url(/image/사료-g.png) no-repeat center;}
 
-.production .list5 li:nth-child(1){background: url(/image/사료-연어.png) no-repeat center;}
-.production .list5 li:nth-child(2){background: url(/image/사료-완두.png) no-repeat center;}
-.production .list5 li:nth-child(3){background: url(/image/사료-렌즈콩.png) no-repeat center;}
+.production .list5 li:nth-child(1){background: url(/image/f.png) no-repeat center;}
+.production .list5 li:nth-child(2){background: url(/image/i.png) no-repeat center;}
+.production .list5 li:nth-child(3){background: url(/image/d.png) no-repeat center;}
 
-.production .list6 li:nth-child(1){background: url(/image/사료-닭.png) no-repeat center;}
-.production .list6 li:nth-child(2){background: url(/image/사료-연어.png) no-repeat center;}
-.production .list6 li:nth-child(3){background: url(/image/사료-병아리콩.png) no-repeat center;}
+.production .list6 li:nth-child(1){background: url(/image/c.png) no-repeat center;}
+.production .list6 li:nth-child(2){background: url(/image/f.png) no-repeat center;}
+.production .list6 li:nth-child(3){background: url(/image/e.png) no-repeat center;}
 
 /* hover */
 .production:hover{background-color: antiquewhite;}
@@ -561,6 +561,7 @@ header .gnb ul li a{
   text-align: center;
   margin: 100px 0;
 }
+.s3-info .info h1{margin: 20px;}
 .s3-info .info h4{
   font-size: 40px;
   font-weight: 700;
