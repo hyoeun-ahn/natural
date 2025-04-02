@@ -19,7 +19,7 @@ html{scroll-behavior: smooth;}
   position: fixed;
   bottom: 50px;
   right: 20px;
-  background: url(../image/공2.png) no-repeat center/cover;
+  background: url(../image/top.png) no-repeat center/cover;
   object-fit: cover;
   width: 60px;
   height: 80px;
@@ -71,7 +71,7 @@ h2{
   transition: 0.3s;
   width: 110px;
   height: 100px;
-  background: url(../image/로고.png) no-repeat center/cover;
+  background: url(../image/logo.png) no-repeat center/cover;
   opacity: 1;
   position: relative;
 }
@@ -475,11 +475,11 @@ header .gnb ul li a{
 
 .production .list3 li:nth-child(1){background: url(/image/f.png) no-repeat center;}
 .production .list3 li:nth-child(2){background: url(/image/j.png) no-repeat center;}
-.production .list3 li:nth-child(3){background: url(/image/lpng) no-repeat center;}
+.production .list3 li:nth-child(3){background: url(/image/l.png) no-repeat center;}
 
 .production .list4 li:nth-child(1){background: url(/image/c.png) no-repeat center;}
 .production .list4 li:nth-child(2){background: url(/image/i.png) no-repeat center;}
-.production .list4 li:nth-child(3){background: url(/image/사료-g.png) no-repeat center;}
+.production .list4 li:nth-child(3){background: url(/image/g.png) no-repeat center;}
 
 .production .list5 li:nth-child(1){background: url(/image/f.png) no-repeat center;}
 .production .list5 li:nth-child(2){background: url(/image/i.png) no-repeat center;}
@@ -538,17 +538,17 @@ header .gnb ul li a{
 .s3-top:before{
   content: '동물을 통해 얻은 이익은 다시 동물에게 되돌려줘야하며, 특히 어렵고 힘든 곳이 있다면 지원을 아끼지 말아야 한다.';
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
   color: #fff;
   width: 380px;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .s3-top:hover.s3-top:before{
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
