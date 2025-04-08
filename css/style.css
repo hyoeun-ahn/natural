@@ -568,9 +568,11 @@ header .gnb ul li a{
   line-height: 36px;
   color: #0E3970;
 }
-.s3-info .info h4 p{
+.s3-info .info h4 em{
+  display: block;
   font-size: 24px;
   font-weight: 400;
+  font-style: normal;
   color: #0E3970;
 }
 
