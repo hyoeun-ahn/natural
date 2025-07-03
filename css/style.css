@@ -329,7 +329,7 @@ nav ul li:hover{opacity: 0.8;}
 } 
 .pic-more img{
   object-fit: cover;
-  width: 1000px;
+  width: 1300px;
 }
 
 .caption {
@@ -398,6 +398,9 @@ nav ul li:hover{opacity: 0.8;}
   margin: auto;
   width: 100%;
 }
+.production{
+  padding-bottom: 40px;
+}
 .production img{
   width: 350px;
 }
@@ -445,7 +448,6 @@ nav ul li:hover{opacity: 0.8;}
 
 /* hover */
 .production:hover{background-color: antiquewhite;}
-.production:hover img{width: 420px;}
 .production ul li:hover{transform: scale(1.2);}
 
 
@@ -454,7 +456,6 @@ nav ul li:hover{opacity: 0.8;}
 
 
 /* Blue Angel_________________________________ */
-
 .s3-top{
   display: flex;
   flex-direction: column;
